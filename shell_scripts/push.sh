@@ -7,6 +7,7 @@ echo "Pushing to git repositories."
 for i in ~/dotfiles\
 	 ~/code\
 	 ; do
+	echo "";
 	echo "$i";
 	cd "$i";
 	git add *;
@@ -15,4 +16,5 @@ for i in ~/dotfiles\
 	cd $CUR_DIR
 done
 
-prinf "\n...done\n"
+echo "";
+echo "...done"
