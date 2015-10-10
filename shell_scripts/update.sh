@@ -9,14 +9,13 @@ echo "Updating git repositories."
 for i in ~/dotfiles\
 	 ~/Documents/Stuyvesant/12/SoftDev/classcode\
 	 ~/Documents/Stuyvesant/12/SoftDev/submissions\
-     ~/Documents/Stuyvesant/12/Systems/hw/*\
+	 ~/Documents/Stuyvesant/12/Systems/hw/*\
 	; do
     echo "";
     echo "$i";
 
     # We have to go to the .git parent directory to call the pull command
     cd "$i";
-    #cd ..;
 
     # finally pull
     git pull origin master;
@@ -25,4 +24,5 @@ for i in ~/dotfiles\
     cd $CUR_DIR
 done
 
-printf "\n...done\n"
+echo ""
+echo "...done"
