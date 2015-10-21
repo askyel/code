@@ -11,6 +11,7 @@ for i in ~/dotfiles\
 	 ~/Documents/Stuyvesant/12/SoftDev/submissions\
 	 ~/Documents/Stuyvesant/12/SoftDev/projects/*\
 	 ~/Documents/Stuyvesant/12/Systems/hw/*\
+	 ~/Documents/Stuyvesant/12/Systems/projects/*\
 	 ~/Documents/Stuyvesant/12/Systems/notes/systems_notes\
 	; do
     echo "";

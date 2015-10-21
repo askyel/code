@@ -1,5 +1,5 @@
 # code
 
 ### To-Do
-- [ ] color code scripts
+- [ ] color code scripts printing
 - [ ] css templates
