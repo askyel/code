@@ -7,6 +7,7 @@ echo "Pushing to git repositories."
 for i in ~/dotfiles\
 	 ~/code\
 	 ~/stuyhs\
+	 ~/code/askyel.github.io\
 	 ; do
 	echo "";
 	echo "$i";
