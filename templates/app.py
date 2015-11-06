@@ -6,6 +6,6 @@ app = Flask(__name__)
 def index():
     print "hello"
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     app.debug = True
     app.run(host='0.0.0.0',port=8000)
