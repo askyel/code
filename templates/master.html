@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	{% block head %}
+	<title>{% block title %}{% endblock %} - WEBPAGE</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand"> -->
+	{% endblock %}
+</head>
+
+<body>
+	<div id="content">{% block content %}{% endblock %}</div>
+	<div id="footer">
+		{% block footer %}
+		&copy; Copyright 2015 by Ariel Levy, Bi Ling Wu, Alice Xue, and Jeffrey Zou
+		{% endblock %}
+	</div>
+</body>
+
+</html>

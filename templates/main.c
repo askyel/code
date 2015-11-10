@@ -2,7 +2,7 @@
 #include <stdio.h>    // input and output
 #include <fcntl.h>    // read and write files
 #include <errno.h>    // file errors
-#include <unistd.h>   // seek within file
+#include <unistd.h>   // seek within file, forking files
 #include <string.h>   // string functions
 #include <stdlib.h>   // allocate and free memory
 #include <dirent.h>   // read directories
