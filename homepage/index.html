@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Ariel Skye Levy</title>
+
+	<!-- Google Fonts -->
+	<!--<link href="https://fonts.googleapis.com/css?family=Lato|Lora|Josefin+Slab" rel="stylesheet">-->
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main2.css" media="screen">
+
+	<!-- Custom Javascript -->
+	<!--<script src="js/main.js"></script>-->
+</head>
+
+<body>
+	<div id="nav">
+		<ul id="nav-list">
+			<li><a href="#home"><img class="icon" id="home-but" src="images/home.png" /><span class="label">Home</span></a></li>
+			<li><a href="#about"><img class="icon" id="about-but" src="images/user.png" /><span class="label">About</span></a></li>
+			<li><a href="#projects"><img class="icon" id="projects-but" src="images/wrench.png" /><span class="label">Projects</span></a></li>
+			<li><a href="#photography"><img class="icon" id="photography-but" src="images/camera.png" /><span class="label">Photography</span></a></li>
+			<li><a href="#contact"><img class="icon" id="contact-but" src="images/speech-bubble.png" /><span class="label">Contact</span></a></li>
+		</ul>
+	</div>
+
+	<div id="header">
+			</div>
+
+	<div class="page" id="home">
+		<div class="page-content">
+			<h1>Ariel Skye Levy</h1>
+		</div>
+	</div>
+
+	<div class="page" id="about">
+		<div class="page-content">
+			<h1>About</h1>
+
+			<p>Hi, I'm Ariel! I'm currently an undergraduate studying Computer Science at the <a href="https://www.web.mit.edu">Massachusetts Institute of Technology.</a> On campus I'm involved with the <a href="https://www.media.mit.edu">MIT Media Lab</a>, <a href="https://www.designforamerica.mit.edu">Design for America</a>, <a href="http://campkesem.org/mit">Camp Kesem</a>, <a href="http://scripts.mit.edu/~womens-ult/">sMITe</a>, and <a href="http://theta.mit.edu">Kappa Alpha Theta</a>. I'm originally from New York City, where I attended <a href="http://stuy.enschool.org">Stuyvesant High School</a>. Check out my resume <a href="resume.pdf">here</a>.</p> 
+
+			<!--<div class="row">-->
+				<!--<img class="row-img" src="images/mit-logo.png" />-->
+				<!--<img class="row-img" src="images/mit-ml.png" />-->
+				<!--<img class="row-img" src="images/mit-dfa.png" />-->
+				<!--<img class="row-img" src="images/campkesem.png" />-->
+				<!--<img class="row-img" src="images/theta.png" />-->
+				<!--<img class="row-img" src="images/stuyvesant.png" />-->
+			<!--</div>-->
+		</div>
+	</div>
+
+	<div class="page" id="projects">
+		<div class="page-content">
+			<h1>Projects</h1>
+
+			<div id="portfolio"> 
+				<ul id="portfolio-list">
+					<li><a class="portfolio-item" onclick="showPort(1)">Brain Power</a></li>
+					<li><a class="portfolio-item" onclick="showPort(2)">Marginalia</a></li>
+					<li><a class="portfolio-item" onclick="showPort(3)">Machine Learning</a></li>
+				</ul>
+				<div id="portfolio-display">
+					<p class="portfolio-slide">Brain Power description.</p>
+					<p class="portfolio-slide">Marginalia is a chrome extension that streamlines web page saving and collaborative annotation. See <a href="#">this video</a> for a demonstration. It can be downloaded <a href="#">here</a>.</p> 
+					<p class="portfolio-slide">Machine Learning description.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page" id="photography">
+		<div class="page-content">
+			<h1>Photography</h1>
+			
+			<p id="gates">
+				<a class="gate" onclick="showGal(1)">
+					<img class="thumbnail" src="images/slides/portugal/lighthouse.jpg" /> 
+					<img class="thumbnail" src="images/slides/portugal/flags.jpg" />
+					<span class="gate-name">Portugal</span>
+				</a>
+				<a class="gate" onclick="showGal(7)">
+					<img class="thumbnail" src="images/slides/neworleans/fountain.jpg" />
+					<span class="gate-name">New Orleans</span>
+				</a>
+				<a class="gate" onclick="showGal(12)">
+					<img class="thumbnail" src="images/slides/ireland/waterfront.jpg" />
+					<span class="gate-name">Ireland</span>
+				</a>
+				<a class="gate" onclick="showGal(18)">
+					<img class="thumbnail" src="images/slides/spain/cathedral.jpg" />
+					<span class="gate-name">Spain</span>
+				</a>
+				<a class="gate" onclick="showGal(21)">
+					<img class="thumbnail" src="images/slides/newyork/pigeons.jpg" />
+					<img class="thumbnail" src="images/slides/newyork/globe.jpg" />
+					<img class="thumbnail" src="images/slides/newyork/rock.jpg" />
+					<span class="gate-name">New York City</span>
+				</a>
+
+			</p>
+		</div>
+	</div>
+
+	<div class="page" id="contact">
+		<div class="page-content">
+			<h1>Contact</h1>
+
+			<div id="contact-content">
+			<form id="contact-form">
+				<div class="contact-label">Name:</div>
+				<input type="text" name="name" class="contact-input">
+
+				<div class="contact-label">Email:</div>
+				<input type="text" name="email" class="contact-input">
+
+				<div class="contact-label">Message:</div>
+				<textarea rows='4' name="message" class="contact-input"></textarea>
+
+				<input type="submit" value="Send" id="contact-submit">
+			</form>
+
+			<div id="contact-info">
+				<!--<div class="contact-em">aslevy@mit.edu</div>-->
+				<!--<div class="contact-em">917 539-2199</div>-->
+
+				<div id="contact-list">
+					<a href="mailto:aslevy@mit.edu"><img class="tiny-icon" src="images/mail.png" /></a>
+					<a href="https://github.com/askyel"><img class="tiny-icon" src="images/git.png" /></a>
+					<a href="https://www.linkedin.com/in/ariel-skye-levy"><img class="tiny-icon" src="images/in.png" /></a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+			<div id="gallery">
+				<a class="btn" id="hide" onclick="hideGal()">&#10006;</a>
+				<a class="btn slide-btn" id="slide-left" onclick="slideDivs(-1)"><span class="vert-mid">&#10094;</span></a>
+				<a class="btn slide-btn" id="slide-right" onclick="slideDivs(1)"><span class="vert-mid">&#10095;</span></a>
+				<!--<div id="slide-index">1</div>-->
+
+				<div class="slide"> 
+					<img src="images/slides/portugal/discovery_monument.jpg" />
+					<div class="caption">Padrao dos Descobrimentos - Lisbon, Portugal (2016)</div>
+				</div>
+				<div class="slide"> 
+					<img src="images/slides/portugal/flags.jpg" />
+					<div class="caption">Alfama - Lisbon, Portugal (2016)</div>
+				</div>
+				<div class="slide"> 
+					<img src="images/slides/portugal/fishing.jpg" />
+					<div class="caption">Boca do Inferno - Cascais, Portugal (2016)</div>
+				</div>
+				<div class="slide"> 
+					<img src="images/slides/portugal/lighthouse.jpg" />
+					<div class="caption">Santa Marta Lighthouse - Cascais, Portugal (2016)</div>
+				</div>
+				<div class="slide"> 
+					<img src="images/slides/portugal/pena.jpg" />
+					<div class="caption">Pena Palace - Sintra, Portugal (2016)</div>
+				</div>
+				<div class="slide"> 
+					<img src="images/slides/portugal/quinta.jpg" />
+					<div class="caption">Quinta da Regaleira - Sintra, Portugal (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/neworleans/oakst.jpg" />
+					<div class="caption">Oak Street - New Orleans, LA (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/neworleans/oysters.jpg" />
+					<div class="caption">French Market - New Orleans, LA (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/neworleans/stlouis.jpg" />
+					<div class="caption">St. Louis Cathedral - New Orleans, LA (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/neworleans/fountain.jpg" />
+					<div class="caption">Cornstalk Hotel - New Orleans, LA (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/neworleans/mannequin.jpg" />
+					<div class="caption">French Quarter - New Orleans, LA (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/ireland/chathamst.jpg" />
+					<div class="caption">Chatham Street - Dublin, Ireland (2014)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/ireland/waterfront.jpg" />
+					<div class="caption">Waterfront - Cork, Ireland (2014)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/ireland/boats.jpg" />
+					<div class="caption">Waterfront - Cork, Ireland (2014)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/ireland/tent.jpg" />
+					<div class="caption">Waterfront - Cork, Ireland (2014)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/ireland/fort.jpg" />
+					<div class="caption">Elizabeth Fort - Cork, Ireland (2014)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/ireland/arch.jpg" />
+					<div class="caption">Elizabeth Fort - Cork, Ireland (2014)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/spain/carousel.jpg" />
+					<div class="caption">Plaza Mayor - Madrid, Spain (2013)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/spain/cathedral.jpg" />
+					<div class="caption">Seville Cathedral - Seville, Spain (2013)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/spain/alcazar.jpg" />
+					<div class="caption">Royal Alcazar Palace - Seville, Spain (2013)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/newyork/globe2.jpg" />
+					<div class="caption">Columbus Circle - New York, NY (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/newyork/tree.jpg" />
+					<div class="caption">Rockefeller Center - New York, NY (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/newyork/rock.jpg" />
+					<div class="caption">Rockefeller Center - New York, NY (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/newyork/pond.jpg" />
+					<div class="caption">Central Park pond - New York, NY (2016)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/newyork/pigeons.jpg" />
+					<div class="caption">- New York, NY (2014)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/newyork/crossbuildings.jpg" />
+					<div class="caption">- New York, NY (2014)</div>
+				</div>
+				<div class="slide">
+					<img src="images/slides/newyork/globe.jpg" />
+					<div class="caption">Columbus Circle - New York, NY (2014)</div>
+				</div>
+			</div>
+
+	<script src="js/portfolio.js"></script>
+	<script src="js/gallery.js"></script>
+
+</body>

@@ -1,0 +1,197 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #DDDDDD;
+}
+
+body {
+	line-height: 2.0;
+	font-size: 18px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+	line-height: 1.2;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	opacity: 0.7;
+}
+
+a:hover {
+	opacity: 1.0;
+}
+
+#nav {
+	position: fixed;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#nav-list {
+	margin: 0;
+	padding: 0 10px 0;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	list-style-type: none;
+}
+
+#nav-list a {
+	text-decoration: none;
+	color: rgba(255,255,255,0);
+	margin: 0;
+}
+
+#nav-list a:hover {
+	color: rgba(255,255,255,1);
+}
+
+#nav-list img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#nav-list .label {
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+}
+
+#header {
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: 0;
+	padding-right: 20px;
+}
+
+#contact-list {
+	list-style-type: none;
+	text-align: center;
+}
+
+#contact-list li {
+	display: inline;
+}
+
+.page {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+.page .page-content {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	max-width: 650px;
+	margin: 0 auto 0;
+}
+
+.page-content h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding-bottom: 10px;
+	font-size: 40px;
+}
+
+#home {
+	background-image: 
+		linear-gradient(
+			rgba(0,0,0,0.6),
+			rgba(0,0,0,0.6)
+		),
+		url("../images/graffiti.jpg");
+	background-size: cover;
+}
+
+#about {
+	background-color: #AC80A0;
+}
+
+#projects {
+	background-color: #89AAE6;
+}
+
+#photography .page-content {
+	color: black; 
+}
+
+#gallery {
+	margin-top: 20px;
+	padding: 0;
+	width: 100%;
+}
+
+#gallery .slide {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	color: rgba(0,0,0,0);
+}
+
+#gallery .slide:hover {
+	/*background-color: black;*/
+	color: black;
+}
+
+#gallery img {
+	max-width: 650px;
+	max-height: 432.2px;
+	display: block;
+	margin: 0 auto 0;
+	padding: 0;
+}
+
+#gallery img:hover {
+	/*-webkit-filter: greyscale;*/
+	/*-webkit-filter: brightness(50%); */
+	opacity: 0.5;
+}
+
+.caption {
+	position: absolute;
+	margin: 0;
+	padding-bottom: 20px;
+	bottom: 0;
+	font-size: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+.btn {
+	font-size: 30px;
+}
+
+.slide-left {
+	float: left;
+}
+
+.slide-right {
+	float: right;
+}
+
+#slide-index {
+	width: 100%;
+	text-align: center;
+}
+
+#contact {
+	background-color: #3685B5;
+}
+
+
