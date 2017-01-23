@@ -8,5 +8,6 @@
 - [x] project/experience portfolio
 - [x] updated resume
 - [ ] separate photography gallery
-- [ ] actual hooked up contact page
-- [ ] copyright bottom
+- [x] actual hooked up contact page
+- [ ] nice sent results
+- [x] copyright bottom

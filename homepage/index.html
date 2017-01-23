@@ -35,6 +35,7 @@
 	<div class="page" id="home">
 		<div class="page-content">
 			<h1>Ariel Skye Levy</h1>
+
 		</div>
 	</div>
 
@@ -44,6 +45,14 @@
 			<h1>About</h1>
 
 			<p>Hi, I'm Ariel! I'm currently an undergraduate studying Computer Science at the <a href="https://www.web.mit.edu">Massachusetts Institute of Technology.</a> On campus I'm involved with the <a href="https://www.media.mit.edu">MIT Media Lab</a>, <a href="https://www.designforamerica.mit.edu">Design for America</a>, <a href="http://campkesem.org/mit">Camp Kesem</a>, <a href="http://scripts.mit.edu/~womens-ult/">sMITe</a>, and <a href="http://theta.mit.edu">Kappa Alpha Theta</a>. I'm originally from New York City, where I attended <a href="http://stuy.enschool.org">Stuyvesant High School</a>. Check out my resume <a href="resume.pdf">here</a>.</p> 
+
+			<div id="contact-list">
+				<a href="mailto:aslevy@mit.edu"><img class="tiny-icon" src="images/mail.png" /></a>
+				<a href="https://github.com/askyel"><img class="tiny-icon" src="images/git.png" /></a>
+				<a href="https://www.linkedin.com/in/ariel-skye-levy"><img class="tiny-icon" src="images/in.png" /></a>
+			</div>
+
+
 
 			<!--<div class="row">-->
 				<!--<img class="row-img" src="images/mit-logo.png" />-->
@@ -69,9 +78,9 @@
 					<li><a class="portfolio-item" onclick="showPort(3)">Machine Learning</a></li>
 				</ul>
 				<div id="portfolio-display">
-					<p class="portfolio-slide"><a href="http://www.brain-power.com">Brain Power</a> builds software to transform wearables into neuro-assistive devices for those challenged by autism. I externed as a project manager with Brain Power, leading a team of six developers creating an application across Android mobile and Google Glass platforms.<img class="portfolio-image" src="images/portfolio/brain-power.png" /></p>
+					<p class="portfolio-slide"><a href="http://www.brain-power.com">Brain Power</a> builds software to transform wearables into neuro-assistive devices for those challenged by autism. I externed as a project manager with Brain Power, leading a team of six developers creating an application across Android mobile and Google Glass platforms.<img class="portfolio-image white-filter" src="images/portfolio/brain-power.png" /></p>
 					<p class="portfolio-slide">Marginalia is a Chrome extension that streamlines web page saving and collaborative annotation. Specific sections of text can be highlighted or commented on. The extension also provides space for general notes on the article as a whole. See <a href="http://www.youtube.com/embed/OBCynq96As0?autoplay=1">this video</a> for a demonstration.<img class="portfolio-image" src="images/portfolio/marginalia.png" /></p> 
-					<p class="portfolio-slide">I performed research in machine learning with the <a href="http://www.ccls.columbia.edu">Center for Computational Learning Systems @ Columbia University.</a> I presented my work at the <a href="http://www.icmla-conference.org">International Conference on Machine Learning & Applications</a> and the <a href="http://www.nyas.org/Events/Detail.aspx?cid=b51f298a-bf26-48cf-8f12-8d31b5b1fb02">New York Academy of Sciences Machine Learning Symposium.</a><img class="portfolio-image" src="images/portfolio/ccls.png" /></p>
+					<p class="portfolio-slide">I performed research in machine learning with the <a href="http://www.ccls.columbia.edu">Center for Computational Learning Systems @ Columbia University.</a> I presented my work at the <a href="http://www.icmla-conference.org">International Conference on Machine Learning & Applications</a> and the <a href="http://www.nyas.org/Events/Detail.aspx?cid=b51f298a-bf26-48cf-8f12-8d31b5b1fb02">New York Academy of Sciences Machine Learning Symposium.</a><img class="portfolio-image white-filter" src="images/portfolio/ccls.png" /></p>
 				</div>
 			</div>
 		</div>
@@ -116,8 +125,7 @@
 		<div class="page-content">
 			<h1>Contact</h1>
 
-			<div id="contact-content">
-			<form id="contact-form">
+			<form id="contact-form" method="post" action="php/contactengine.php">
 				<div class="contact-label">Name:</div>
 				<input type="text" name="name" class="contact-input">
 
@@ -125,22 +133,10 @@
 				<input type="text" name="email" class="contact-input">
 
 				<div class="contact-label">Message:</div>
-				<textarea rows='4' name="message" class="contact-input"></textarea>
+				<textarea rows='5' name="message" class="contact-input"></textarea>
 
 				<input type="submit" value="Send" id="contact-submit">
 			</form>
-
-			<div id="contact-info">
-				<!--<div class="contact-em">aslevy@mit.edu</div>-->
-				<!--<div class="contact-em">917 539-2199</div>-->
-
-				<div id="contact-list">
-					<a href="mailto:aslevy@mit.edu"><img class="tiny-icon" src="images/mail.png" /></a>
-					<a href="https://github.com/askyel"><img class="tiny-icon" src="images/git.png" /></a>
-					<a href="https://www.linkedin.com/in/ariel-skye-levy"><img class="tiny-icon" src="images/in.png" /></a>
-				</div>
-			</div>
-			</div>
 		</div>
 	</div>
 
@@ -259,6 +255,8 @@
 					<div class="caption">Columbus Circle - New York, NY (2014)</div>
 				</div>
 			</div>
+
+			<div id="footer">&copy; 2017 Ariel Skye Levy | Icons from <a href="http://www.flaticon.com">Flaticon</a></div>
 
 	<script src="js/portfolio.js"></script>
 	<script src="js/gallery.js"></script>
