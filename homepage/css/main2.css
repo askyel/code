@@ -78,6 +78,12 @@ a:hover {
 	margin: 10px;
 }
 
+.page-top {
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 50%;
+}
+
 #header {
 	position: fixed;
 	right: 0;
@@ -165,9 +171,20 @@ a:hover {
 
 #portfolio-display {
 	width: 60%;
+	height: 350px;
 	margin: 0;
 	padding: 0;
 	float: right;
+}
+
+.portfolio-image {
+	display: block;
+	height: 50px;
+	margin: 10px auto 0px;;
+}
+
+.white-filter {
+	filter: brightness(0) invert(1);
 }
 
 #photography .page-content {

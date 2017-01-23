@@ -4,9 +4,9 @@
 - [ ] color code scripts printing
 - [ ] css templates
 ### Homepage
-- [ ] mini icons on top of each section
-- [ ] project/experience portfolio
-- [ ] updated resume
+- [x] mini icons on top of each section
+- [x] project/experience portfolio
+- [x] updated resume
 - [ ] separate photography gallery
 - [ ] actual hooked up contact page
 - [ ] copyright bottom
