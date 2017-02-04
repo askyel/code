@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Ariel Skye Levy</title>
+
+	<!-- Google Fonts -->
+	<!--<link href="https://fonts.googleapis.com/css?family=Lato|Lora|Josefin+Slab" rel="stylesheet">-->
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+
+	<!-- Custom Javascript -->
+	<!--<script src="js/main.js"></script>-->
+</head>
+
+<body>
+
+	<div id="gallery-body">
+
+		<h1>ASL Photography</h1>
+
+		<h2>Travel</h2>
+		
+		<p id="gates">
+			<a class="gate" onclick="showGal(1)">
+				<img class="thumbnail" src="images/slides/portugal/discovery_monument.JPG" />
+				<img class="thumbnail" src="images/slides/portugal/flags.JPG" />
+				<img class="thumbnail" src="images/slides/portugal/fishing.JPG" />
+				<img class="thumbnail" src="images/slides/portugal/lighthouse.JPG" /> 
+				<img class="thumbnail" src="images/slides/portugal/pena.JPG" />
+				<img class="thumbnail" src="images/slides/portugal/quinta.JPG" />
+				<span class="gate-name">Portugal</span>
+			</a>
+			<a class="gate" onclick="showGal(7)">
+				<img class="thumbnail" src="images/slides/neworleans/oakst.JPG" />
+				<img class="thumbnail" src="images/slides/neworleans/oysters.JPG" />
+				<img class="thumbnail" src="images/slides/neworleans/stlouis.JPG" />
+				<img class="thumbnail" src="images/slides/neworleans/fountain.JPG" />
+				<img class="thumbnail" src="images/slides/neworleans/mannequin.JPG" />
+				<span class="gate-name">New Orleans</span>
+			</a>
+			<a class="gate" onclick="showGal(12)">
+				<img class="thumbnail" src="images/slides/ireland/chathamst.JPG" />
+				<img class="thumbnail" src="images/slides/ireland/waterfront.JPG" />
+				<img class="thumbnail" src="images/slides/ireland/boats.JPG" />
+				<img class="thumbnail" src="images/slides/ireland/tent.JPG" />
+				<img class="thumbnail" src="images/slides/ireland/fort.JPG" />
+				<img class="thumbnail" src="images/slides/ireland/arch.JPG" />
+				<span class="gate-name">Ireland</span>
+			</a>
+			<a class="gate" onclick="showGal(18)">
+				<img class="thumbnail" src="images/slides/spain/carousel.JPG" />
+				<img class="thumbnail" src="images/slides/spain/cathedral.JPG" />
+				<img class="thumbnail" src="images/slides/spain/alcazar.JPG" />
+				<span class="gate-name">Spain</span>
+			</a>
+			<a class="gate" onclick="showGal(21)">
+				<img class="thumbnail" src="images/slides/newyork/globe2.JPG" />
+				<img class="thumbnail" src="images/slides/newyork/tree.JPG" />
+				<img class="thumbnail" src="images/slides/newyork/rock.JPG" />
+				<img class="thumbnail" src="images/slides/newyork/pond.JPG" />
+				<img class="thumbnail" src="images/slides/newyork/pigeons.JPG" />
+				<img class="thumbnail" src="images/slides/newyork/crossbuildings.JPG" />
+				<img class="thumbnail" src="images/slides/newyork/globe.JPG" />
+				<span class="gate-name">New York City</span>
+			</a>
+
+		</p>
+
+		<h2>Events</h2>
+
+		<div id="gallery">
+			<a class="btn" id="hide" onclick="hideGal()">&#10006;</a>
+			<a class="btn slide-btn" id="slide-left" onclick="slideDivs(-1)"><span class="vert-mid">&#10094;</span></a>
+			<a class="btn slide-btn" id="slide-right" onclick="slideDivs(1)"><span class="vert-mid">&#10095;</span></a>
+			<!--<div id="slide-index">1</div>-->
+
+			<div class="slide"> 
+				<img src="images/slides/portugal/discovery_monument.JPG" />
+				<div class="caption">Padrao dos Descobrimentos - Lisbon, Portugal (2016)</div>
+			</div>
+			<div class="slide"> 
+				<img src="images/slides/portugal/flags.JPG" />
+				<div class="caption">Alfama - Lisbon, Portugal (2016)</div>
+			</div>
+			<div class="slide"> 
+				<img src="images/slides/portugal/fishing.JPG" />
+				<div class="caption">Boca do Inferno - Cascais, Portugal (2016)</div>
+			</div>
+			<div class="slide"> 
+				<img src="images/slides/portugal/lighthouse.JPG" />
+				<div class="caption">Santa Marta Lighthouse - Cascais, Portugal (2016)</div>
+			</div>
+			<div class="slide"> 
+				<img src="images/slides/portugal/pena.JPG" />
+				<div class="caption">Pena Palace - Sintra, Portugal (2016)</div>
+			</div>
+			<div class="slide"> 
+				<img src="images/slides/portugal/quinta.JPG" />
+				<div class="caption">Quinta da Regaleira - Sintra, Portugal (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/neworleans/oakst.JPG" />
+				<div class="caption">Oak Street - New Orleans, LA (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/neworleans/oysters.JPG" />
+				<div class="caption">French Market - New Orleans, LA (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/neworleans/stlouis.JPG" />
+				<div class="caption">St. Louis Cathedral - New Orleans, LA (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/neworleans/fountain.JPG" />
+				<div class="caption">Cornstalk Hotel - New Orleans, LA (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/neworleans/mannequin.JPG" />
+				<div class="caption">French Quarter - New Orleans, LA (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/ireland/chathamst.JPG" />
+				<div class="caption">Chatham Street - Dublin, Ireland (2014)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/ireland/waterfront.JPG" />
+				<div class="caption">Waterfront - Cork, Ireland (2014)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/ireland/boats.JPG" />
+				<div class="caption">Waterfront - Cork, Ireland (2014)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/ireland/tent.JPG" />
+				<div class="caption">Waterfront - Cork, Ireland (2014)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/ireland/fort.JPG" />
+				<div class="caption">Elizabeth Fort - Cork, Ireland (2014)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/ireland/arch.JPG" />
+				<div class="caption">Elizabeth Fort - Cork, Ireland (2014)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/spain/carousel.JPG" />
+				<div class="caption">Plaza Mayor - Madrid, Spain (2013)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/spain/cathedral.JPG" />
+				<div class="caption">Seville Cathedral - Seville, Spain (2013)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/spain/alcazar.JPG" />
+				<div class="caption">Royal Alcazar Palace - Seville, Spain (2013)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/newyork/globe2.JPG" />
+				<div class="caption">Columbus Circle - New York, NY (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/newyork/tree.JPG" />
+				<div class="caption">Rockefeller Center - New York, NY (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/newyork/rock.JPG" />
+				<div class="caption">Rockefeller Center - New York, NY (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/newyork/pond.JPG" />
+				<div class="caption">Central Park pond - New York, NY (2016)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/newyork/pigeons.JPG" />
+				<div class="caption">- New York, NY (2014)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/newyork/crossbuildings.JPG" />
+				<div class="caption">- New York, NY (2014)</div>
+			</div>
+			<div class="slide">
+				<img src="images/slides/newyork/globe.JPG" />
+				<div class="caption">Columbus Circle - New York, NY (2014)</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">&copy; 2017 <a href="index.html">Ariel Skye Levy</a> | Icons from <a href="http://www.flaticon.com">Flaticon</a></div>
+
+	<script src="js/gallery.js"></script>
+
+</body>
